@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Train Times Activity</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>  
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />  
+        <!-- <script src="javascript/app.js"></script> -->
+    </head>
+<body>
+    <div class="container">
+    <h4>Survey Questions:</h4>
+    <div class="form-row">
+      <div class="col">
+        <h3>Name:</h3>
+        <input type="text" class="form-control" placeholder="Name">
+        <h3>Picture</h3>
+        <input type="text" class="form-control" placeholder="Link to Picture">
+      </div>
+    </div>
+  </form>
+
+  <div class="form-row">
+    <h2> Question 1</h2>
+  </div>
+    <div class="form-row">
+        <h3>I would rather stay at home, then go out with friends</h3>
+</div>
+<div class="form-row">
+  <form>
+    <div class="form-row align-items-center">
+      <div class="col-auto my-1">
+        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strong agree) </option>
+        </select>
+      </div>
+      <div class="col-auto my-1">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="form-row">
+        <h2> Question 2</h2>
+      </div>
+        <div class="form-row">
+            <h3>I would rather hike in the mountains than go to a bar</h3>
+    </div>
+    <div class="form-row">
+      <form>
+        <div class="form-row align-items-center">
+          <div class="col-auto my-1">
+            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+              <option value="1">1 (strongly disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (strong agree) </option>
+            </select>
+          </div>
+          <div class="col-auto my-1">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="form-row">
+            <h2> Question 3</h2>
+          </div>
+            <div class="form-row">
+                <h3>If I see someone in a parking lot in need of a jump, I will offer my own car</h3>
+        </div>
+        <div class="form-row">
+          <form>
+            <div class="form-row align-items-center">
+              <div class="col-auto my-1">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option value="1">1 (strongly disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (strong agree) </option>
+                </select>
+              </div>
+              <div class="col-auto my-1">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="form-row">
+                <h2> Question 4</h2>
+              </div>
+                <div class="form-row">
+                    <h3>I would rather play video games than read a book/watch a movie</h3>
+            </div>
+            <div class="form-row">
+              <form>
+                <div class="form-row align-items-center">
+                  <div class="col-auto my-1">
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                      <option value="1">1 (strongly disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strong agree) </option>
+                    </select>
+                  </div>
+                  <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="form-row">
+                    <h2> Question 5</h2>
+                  </div>
+                    <div class="form-row">
+                        <h3>I would rather listen to music than listen to a podcast</h3>
+                </div>
+                <div class="form-row">
+                  <form>
+                    <div class="form-row align-items-center">
+                      <div class="col-auto my-1">
+                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                          <option value="1">1 (strongly disagree)</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5 (strong agree) </option>
+                        </select>
+                      </div>
+                      <div class="col-auto my-1">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="form-row">
+            <h2> Question 6</h2>
+        </div>
+            <div class="form-row">
+                <h3>I prefer flip-flops/sperrys over tennis shoes</h3>
+        </div>
+        <div class="form-row">
+        <form>
+            <div class="form-row align-items-center">
+            <div class="col-auto my-1">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strong agree) </option>
+                </select>
+            </div>
+            <div class="col-auto my-1">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </div>
+        </form>
+        </div>
+        <div class="form-row">
+                <h2> Question 7</h2>
+              </div>
+                <div class="form-row">
+                    <h3>I would rather cook my meal then get fast food.</h3>
+            </div>
+            <div class="form-row">
+              <form>
+                <div class="form-row align-items-center">
+                  <div class="col-auto my-1">
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                      <option value="1">1 (strongly disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strong agree) </option>
+                    </select>
+                  </div>
+                  <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="form-row">
+                    <h2> Question 8</h2>
+                  </div>
+                    <div class="form-row">
+                        <h3>I prefer watching sports over reality television.</h3>
+                </div>
+                <div class="form-row">
+                  <form>
+                    <div class="form-row align-items-center">
+                      <div class="col-auto my-1">
+                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                          <option value="1">1 (strongly disagree)</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5 (strong agree) </option>
+                        </select>
+                      </div>
+                      <div class="col-auto my-1">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="form-row">
+                        <h2> Question 9</h2>
+                      </div>
+                        <div class="form-row">
+                            <h3>I feel more energetic after spending time with a group of people.</h3>
+                    </div>
+                    <div class="form-row">
+                      <form>
+                        <div class="form-row align-items-center">
+                          <div class="col-auto my-1">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <option value="1">1 (strongly disagree)</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5 (strong agree) </option>
+                            </select>
+                          </div>
+                          <div class="col-auto my-1">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="form-row">
+                            <h2> Question 10</h2>
+                          </div>
+                            <div class="form-row">
+                                <h3>I prefer to go to malls to people watch over shopping for things.</h3>
+                        </div>
+                        <div class="form-row">
+                          <form>
+                            <div class="form-row align-items-center">
+                              <div class="col-auto my-1">
+                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                  <option value="1">1 (strongly disagree)</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5 (strong agree) </option>
+                                </select>
+                              </div>
+                              <div class="col-auto my-1">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+        
+</div>
+</body>
+</html>
+<form>
+    
+
+    
