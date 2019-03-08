@@ -20,9 +20,9 @@
     <div class="form-row">
       <div class="col">
         <h3>Name:</h3>
-        <input type="text" class="form-control" placeholder="Name">
+        <input type="text" id="name" class="form-control" placeholder="Name">
         <h3>Picture</h3>
-        <input type="text" class="form-control" placeholder="Link to Picture">
+        <input type="text" id="pictureURL" class="form-control" placeholder="Link to Picture">
       </div>
     </div>
   </form>
@@ -37,8 +37,8 @@
   <form>
     <div class="form-row align-items-center">
       <div class="col-auto my-1">
-        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <label class="mr-sm-2 sr-only" for="questionOne">Preference</label>
+        <select class="custom-select mr-sm-2" id="questionOne">
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -59,8 +59,8 @@
       <form>
         <div class="form-row align-items-center">
           <div class="col-auto my-1">
-            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <label class="mr-sm-2 sr-only" for="questionTwo">Preference</label>
+            <select class="custom-select mr-sm-2" id="questionTwo">
               <option value="1">1 (strongly disagree)</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -81,8 +81,8 @@
           <form>
             <div class="form-row align-items-center">
               <div class="col-auto my-1">
-                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <label class="mr-sm-2 sr-only" for="questionThree">Preference</label>
+                <select class="custom-select mr-sm-2" id="questionThree">
                   <option value="1">1 (strongly disagree)</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -103,8 +103,8 @@
               <form>
                 <div class="form-row align-items-center">
                   <div class="col-auto my-1">
-                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <label class="mr-sm-2 sr-only" for="questionFour">Preference</label>
+                    <select class="custom-select mr-sm-2" id="questionFour">
                       <option value="1">1 (strongly disagree)</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -125,8 +125,8 @@
                   <form>
                     <div class="form-row align-items-center">
                       <div class="col-auto my-1">
-                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <label class="mr-sm-2 sr-only" for="questionFive">Preference</label>
+                        <select class="custom-select mr-sm-2" id="questionFive">
                           <option value="1">1 (strongly disagree)</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -147,8 +147,8 @@
         <form>
             <div class="form-row align-items-center">
             <div class="col-auto my-1">
-                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <label class="mr-sm-2 sr-only" for="questionSix">Preference</label>
+                <select class="custom-select mr-sm-2" id="questionSix">
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -169,8 +169,8 @@
               <form>
                 <div class="form-row align-items-center">
                   <div class="col-auto my-1">
-                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <label class="mr-sm-2 sr-only" for="questionSeven">Preference</label>
+                    <select class="custom-select mr-sm-2" id="questionSeven">
                       <option value="1">1 (strongly disagree)</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -191,8 +191,8 @@
                   <form>
                     <div class="form-row align-items-center">
                       <div class="col-auto my-1">
-                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <label class="mr-sm-2 sr-only" for="questionEight">Preference</label>
+                        <select class="custom-select mr-sm-2" id="questionEight">
                           <option value="1">1 (strongly disagree)</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -213,8 +213,8 @@
                       <form>
                         <div class="form-row align-items-center">
                           <div class="col-auto my-1">
-                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <label class="mr-sm-2 sr-only" for="questionNine">Preference</label>
+                            <select class="custom-select mr-sm-2" id="questionNine">
                               <option value="1">1 (strongly disagree)</option>
                               <option value="2">2</option>
                               <option value="3">3</option>
@@ -235,8 +235,8 @@
                           <form>
                             <div class="form-row align-items-center">
                               <div class="col-auto my-1">
-                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <label class="mr-sm-2 sr-only" for="questionTen">Preference</label>
+                                <select class="custom-select mr-sm-2" id="questionTen">
                                   <option value="1">1 (strongly disagree)</option>
                                   <option value="2">2</option>
                                   <option value="3">3</option>
@@ -246,16 +246,65 @@
                               </div>
                             </div>
                         <div class="row col-md-12">
-                        <button type="submit" class="btn btn-lg btn-block btn-primary">Submit</button>
+                        <button type="submit" id="surveyButton" class="btn btn-lg btn-block btn-primary">Submit</button>
                         </div>  
                 </form>
             </div>
             <a href="/apiroutes.js">API friends list</a> | <a href='https://github.com/Aagladstone/Friend-Finder'>GitHub Repo</a>
 
 </div>
-</body>
+<script>
+
+    $("#surveyButton").on("click", function(event){
+        event.preventDefault();
+
+        var answers = {
+          name: $("#name").val().trim(),
+          picture: $("#picureURL").val().trim(),
+          questionOne: $("#questionOne").val().trim(),
+          questionTwo: $("#questionTwo").val().trim(),
+          questionThree: $("#questionThree").val().trim(),
+          questionFour: $("#questionFour").val().trim(),
+          questionFive: $("#questionFive").val().trim(),
+          questionSix: $("#questionSix").val().trim(),
+          questionSeven: $("#questionSeven").val().trim(),
+          questionEight: $("#questionEight").val().trim(),
+          questionNine: $("#questionNine").val().trim(),
+          questionTen: $("#questionTen").val().trim()
+        };
+
+        $.post("/api/friends", answers)
+          .then(function(data) {
+            console.log(data);
+            if (data.answers) {
+  //               <div class="modal" tabindex="-1" role="dialog">
+  //   <div class="modal-dialog" role="document">
+  //     <div class="modal-content">
+  //       <div class="modal-header">
+  //         <h5 class="modal-title">Modal title</h5>
+  //         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  //           <span aria-hidden="true">&times;</span>
+  //         </button>
+  //       </div>
+  //       <div class="modal-body">
+  //         <p> Here is your closest match!</p>
+  //       </div>
+  //       <div class="modal-footer">
+  //         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  //       </div>
+  //     </div>
+  //   </div>
+  // </div>
+        alert("Thank you, grabbing your match now");
+            }
+          })
+      
+    })
+
+        </script>
+    </body>
 </html>
-<form>
+
     
 
     
