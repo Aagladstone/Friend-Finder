@@ -16,11 +16,6 @@ app.post("/api/friends", function(req, res) {
   res.json(true);
   //INSERT comparison logic here
 
-  // for(var i = 2; i < friendsData.length; i ++) {
-  //     var sum =+ parseInt(friendsData[i]);
-  //     console.log(sum);
-      
-  // }
 }); 
 
 };

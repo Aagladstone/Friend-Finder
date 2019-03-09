@@ -108,8 +108,8 @@
                   <div class="col-auto my-1">
                     <label class="mr-sm-2 sr-only" for="questionFour">Preference</label>
                     <select class="custom-select mr-sm-2" id="questionFour">
-                      <option value="1">1 (strongly disagree)</option>
                       <option value="0"> </option>
+                      <option value="1">1 (strongly disagree)</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
                       <option value="4">4</option>
@@ -275,21 +275,23 @@
         var answers = {
           name: $("#name").val(),
           picture: $("#pictureURL").val(),
-          questionOne: $("#questionOne").val().trim(),
-          questionTwo: $("#questionTwo").val().trim(),
-          questionThree: $("#questionThree").val().trim(),
-          questionFour: $("#questionFour").val().trim(),
-          questionFive: $("#questionFive").val().trim(),
-          questionSix: $("#questionSix").val().trim(),
-          questionSeven: $("#questionSeven").val().trim(),
-          questionEight: $("#questionEight").val().trim(),
-          questionNine: $("#questionNine").val().trim(),
-          questionTen: $("#questionTen").val().trim()
+          scores:
+                [$("#questionOne").val().trim(),
+                $("#questionTwo").val().trim(),
+                $("#questionThree").val().trim(),
+                $("#questionFour").val().trim(),
+                $("#questionFive").val().trim(),
+                $("#questionSix").val().trim(),
+                $("#questionSeven").val().trim(),
+                $("#questionEight").val().trim(),
+                $("#questionNine").val().trim(),
+                $("#questionTen").val().trim()
+                ]
         };
 
         console.log(answers);
 
-        $.post("/data/friends", answers, function(data){
+        $.post("/api/friends", answers, function(data){
 
             console.log(data);
             if (data) {
@@ -315,7 +317,7 @@
             }
 
           $("#name").val("");
-          $("#picureURL").val("");
+          $("#pictureURL").val("");
           $("#questionOne").val("");
           $("#questionTwo").val("");
           $("#questionThree").val("");
